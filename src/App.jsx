@@ -1,21 +1,16 @@
-import * as React from "react";
-import { ReactP5Wrapper } from "@p5-wrapper/react";
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+import Sketch from './Sketch';
+import Home from './Home.jsx'
 
-function sketch(p5) {
-  p5.setup = () => p5.createCanvas(600, 400, p5.WEBGL);
-
-  p5.draw = () => {
-    p5.background(250);
-    p5.normalMaterial();
-    p5.push();
-    p5.rotateZ(p5.frameCount * 0.01);
-    p5.rotateX(p5.frameCount * 0.01);
-    p5.rotateY(p5.frameCount * 0.01);
-    p5.plane(100);
-    p5.pop();
-  };
+function App() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/sketch" element={<Sketch />} />
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
-export default function App() {
-  return <ReactP5Wrapper sketch={sketch} />;
-}
+export default App;
