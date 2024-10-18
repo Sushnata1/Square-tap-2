@@ -1,0 +1,8 @@
+/*&not working*/
+.icons{
+padding: 0 5px;
+}
+
+.icons:hover{
+    opacity: 25% !important;
+}
