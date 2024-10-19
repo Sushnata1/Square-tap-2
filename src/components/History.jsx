@@ -3,9 +3,7 @@ import JsonTable from "./JsonTable";
 
 export default () => {
 
-    const gameHistory = localStorage.getItem("gameHistory") || ""
-
-    console.log(gameHistory);
+    const gameHistory = JSON.parse(localStorage.getItem("gameHistory")) || []
 
     return (
         <div className="pad">

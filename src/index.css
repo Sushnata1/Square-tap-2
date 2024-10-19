@@ -150,6 +150,7 @@ button:hover {
 table {
   width: 100%;
   border-collapse: collapse;
+  background-color: aquamarine;
 }
 
 th,td {
@@ -163,7 +164,7 @@ th:hover{
 }
 
 tr:hover {
-  background-color: aquamarine;
+  background-color: aqua;
 }
 
 th{
