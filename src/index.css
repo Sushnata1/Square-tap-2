@@ -54,7 +54,7 @@ h3 {
   overflow: auto;
   background-color: darkred;
   border-style: solid;
-  border-width: 2px;
+  border-width: 5px;
   border-color: red;
 }
 
@@ -67,7 +67,7 @@ h3:hover {
   background-color: darkred;
   color:white;
   border-style: solid;
-  border-width: 2px;
+  border-width: 5px;
   border-color: red;
 }
 
@@ -154,8 +154,9 @@ table {
 }
 
 th,td {
-  border: 2px solid black;
+  border: 2px solid slateblue;
   text-align: left;
+  border-width: 5px;
   padding: 5px;
 }
 
