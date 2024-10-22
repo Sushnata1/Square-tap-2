@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200">
+    <rect id="square" width="200" height="200" fill="#555" />
+    <text id="text" x="50%" y="25%" fill="white" font-size="30" text-anchor="middle" alignment-baseline="middle">
+        <tspan fill="white" dy="1em" x="50%" >🥺</tspan>
+        <tspan fill="white" dy="1em" x="50%" >---</tspan>
+        <tspan fill="white" dy="1em" x="50%" >Image could </tspan>
+        <tspan fill="white" dy="1em" x="50%" >not be loaded</tspan>
+    </text>
+</svg>

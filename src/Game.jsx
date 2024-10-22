@@ -2,6 +2,8 @@ import * as React from "react";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
+import Sketch from './game/Sketch';
+
 export default () => {
 
     const [count,setCount] = useState(0)
@@ -33,8 +35,7 @@ export default () => {
     return (
         <div className="full-screen">
             <h1>Game</h1>
-            <p>{level}</p>
-            <p>{count}</p>
+            <Sketch/>
             <button onClick={()=>setCount(count+1)}>Increment</button>
             <button onClick={navigateToGameOver}>Game Over</button>
         </div>
