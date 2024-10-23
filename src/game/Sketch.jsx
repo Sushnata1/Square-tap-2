@@ -6,13 +6,12 @@ import Bot from './bot';
 import Bomb from './bomb';
 
 
-export default () => {
+export default ({increment,gameOver}) => {
 
     const canvasRef = useRef(null);
 
     const level = JSON.parse(localStorage.getItem("level"))
     const { size, number: count, delay } = level;
-    var points = 0;
     var parentWidth, parentHeight;
 
     var bots, bombs;
@@ -36,6 +35,7 @@ export default () => {
             console.log({bots});
             bombs = createBombs(p5,count);
             console.log({bombs});
+            p5.frameRate(10)
         }
 
         p5.draw = () => {
@@ -46,11 +46,11 @@ export default () => {
             showPointer();
             p5.pop();
             for (let b of bots) {
-                //b.collide();
+                b.collide();
                 b.show();
             }
             for (let b of bombs) {
-                //b.collide();
+                b.collide();
                 b.show();
             }
         };
@@ -62,19 +62,17 @@ export default () => {
         }
 
         const createBots = (p5,count) => {
-            p5.rect(100, 100, 50, 50);
             var bots = [];
             for (let i = 0; i < count; i++) {
-                bots.push(new Bot(p5,size,parentWidth,parentHeight));
+                bots.push(new Bot(p5,size,parentWidth,parentHeight,increment));
               }
             return bots            
         }
 
         const createBombs = (p5,count) => {
             var bombs = [];
-            p5.rect(100, 100, 50, 50);
             for (let i = 0; i < count; i++) {
-                bombs.push(new Bomb(p5,size,parentWidth,parentHeight));
+                bombs.push(new Bomb(p5,size,parentWidth,parentHeight,gameOver));
               }
             return bombs            
         }

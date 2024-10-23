@@ -35,9 +35,8 @@ export default () => {
     return (
         <div className="full-screen">
             <h1>Game</h1>
-            <Sketch/>
-            <button onClick={()=>setCount(count+1)}>Increment</button>
-            <button onClick={navigateToGameOver}>Game Over</button>
+            <Sketch increment={()=>setCount(count+1)} gameOver={navigateToGameOver}/>
+            <h2>{count}</h2>
         </div>
     )
 }
