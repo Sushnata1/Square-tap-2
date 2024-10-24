@@ -21,7 +21,7 @@ export default ({increment,gameOver}) => {
     function sketch(p5) {
 
         p5.preload = () => {
-            pointerImg = p5.loadImage('/pointer.jpg');
+            pointerImg = p5.loadImage('/pointer.svg');
             //botImg = p5.loadImage(`assets/Durga_puja_2024/kali.jpeg`);
             //bombImg = p5.loadImage(`assets/Durga_puja_2024/bomb.jpeg`);
         }
@@ -43,7 +43,6 @@ export default ({increment,gameOver}) => {
             p5.background(0);
             p5.push();
             p5.rectMode(p5.CENTER);
-            showPointer();
             p5.pop();
             for (let b of bots) {
                 b.collide();
@@ -53,6 +52,7 @@ export default ({increment,gameOver}) => {
                 b.collide();
                 b.show();
             }
+            showPointer();
         };
 
         const showPointer = () => {
