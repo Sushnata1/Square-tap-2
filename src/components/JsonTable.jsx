@@ -1,35 +1,14 @@
 import * as React from "react";
 
 export default ({ objarr }) => {
-    //objarr = objarr ?? test
-    // var objkeys = objarr ? Object.keys(objarr[0]) : [];            
-    //         var output = <table> <tr></tr>;
-    //         output += objkeys.map(k=><th>{k}</th>).join();
-    //         output += </tr>
-    //         output += <tr>;
-    //         for(obj of objarr){
-    //             output += <tr>
-    //             output += Object.values(obj).map(val => <td>{val}</td>).join();
-    //             output += </tr>
-    //         }
-    //         output += </tr>
-    //         output += </table>
-    //         console.log(output);
-    //         return output;
-    //objarr = JSON.stringify(objarr);
 
-    console.log(objarr);
-    var objkeys = Object.keys(objarr) || []
-
-    /* {objkeys.map((item,index)=>(
-                        <th key={index}>{item}</th>
-                    ))} */
+    var objkeys = Object.keys(objarr[0]) || []
 
     return (
         <table>
             <thead>
                 <tr>
-                    <th>score</th><th>level</th><th>time_taken</th><th>recorded_at</th>
+                    {objkeys.map((value,index)=>(<th key={index}>{value}</th>))}
                 </tr>
             </thead>
             <tbody>
