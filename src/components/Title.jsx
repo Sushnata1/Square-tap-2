@@ -3,7 +3,6 @@ import { useState, Suspense, lazy } from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
 import PlaceholderImage from "../assets/placeholder.svg";
-import JsonTable from "./JsonTable";
 
 export default () => {
 
@@ -11,10 +10,11 @@ export default () => {
 
     const imgSrc = "../assets/kali.jpg";
 
-    const saveName = (event) => { //buggy
-        setName(event.target.textContent)
-        localStorage.setItem("name", name)
-        console.log(localStorage);
+    const saveName = (event) => { 
+        setName(event.target.value)
+        console.log(event.target.value);
+        localStorage.setItem("name", event.target.value)
+        //console.log(localStorage);
     }
 
     return (
@@ -33,10 +33,8 @@ export default () => {
             </center>
             <h1>Square Tap 2</h1>
             <h2>Welcome to Deepawali 2024 update</h2>
-            <h3 contentEditable
-                onInput={saveName}
-                suppressContentEditableWarning={true}
-            > {name} </h3>
+            <input type="text" name="name" className="name namebox"
+                value={name} onChange={saveName}/>
         </>
     )
 }

@@ -12,7 +12,7 @@ export default () => {
         <>
             <div className="pad">
                 <h1>Game Over</h1>
-                <h3>{name}</h3>
+                <p className="name namebox">{name}</p>
                 <h2><i>Score : </i>{score}</h2>
                 <nav>
                     <ul>
