@@ -21,7 +21,7 @@ export default ({increment,gameOver}) => {
     function sketch(p5) {
 
         p5.preload = () => {
-            pointerImg = p5.loadImage('/pointer.svg');
+            pointerImg = p5.loadImage('/#/pointer.svg');
             //botImg = p5.loadImage(`assets/Durga_puja_2024/kali.jpeg`);
             //bombImg = p5.loadImage(`assets/Durga_puja_2024/bomb.jpeg`);
         }
