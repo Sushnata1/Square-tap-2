@@ -21,7 +21,7 @@ export default ({increment,gameOver}) => {
     function sketch(p5) {
 
         p5.preload = () => {
-            pointerImg = p5.loadImage('/#/pointer.svg');
+            //pointerImg = p5.loadImage('/#/pointer.svg');
             //botImg = p5.loadImage(`assets/Durga_puja_2024/kali.jpeg`);
             //bombImg = p5.loadImage(`assets/Durga_puja_2024/bomb.jpeg`);
         }
@@ -57,7 +57,7 @@ export default ({increment,gameOver}) => {
 
         const showPointer = () => {
             p5.push();
-            p5.image(pointerImg, p5.mouseX - size / 2, p5.mouseY - size / 2, size, size);
+            //p5.image(pointerImg, p5.mouseX - size / 2, p5.mouseY - size / 2, size, size);
             p5.pop();
         }
 
