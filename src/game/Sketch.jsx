@@ -21,9 +21,9 @@ export default ({increment,gameOver}) => {
     function sketch(p5) {
 
         p5.preload = () => {
-            //pointerImg = p5.loadImage('/#/pointer.svg');
-            //botImg = p5.loadImage(`assets/Durga_puja_2024/kali.jpeg`);
-            //bombImg = p5.loadImage(`assets/Durga_puja_2024/bomb.jpeg`);
+            pointerImg = p5.loadImage('./pointer.svg');
+            botImg = p5.loadImage(`./kali.jpeg`);
+            bombImg = p5.loadImage(`./bomb.jpg`);
         }
 
         p5.setup = () => {
@@ -57,14 +57,14 @@ export default ({increment,gameOver}) => {
 
         const showPointer = () => {
             p5.push();
-            //p5.image(pointerImg, p5.mouseX - size / 2, p5.mouseY - size / 2, size, size);
+            p5.image(pointerImg, p5.mouseX - size / 2, p5.mouseY - size / 2, size, size);
             p5.pop();
         }
 
         const createBots = (p5,count) => {
             var bots = [];
             for (let i = 0; i < count; i++) {
-                bots.push(new Bot(p5,size,parentWidth,parentHeight,increment));
+                bots.push(new Bot(p5,size,parentWidth,parentHeight,increment,botImg));
               }
             return bots            
         }
@@ -72,7 +72,7 @@ export default ({increment,gameOver}) => {
         const createBombs = (p5,count) => {
             var bombs = [];
             for (let i = 0; i < count; i++) {
-                bombs.push(new Bomb(p5,size,parentWidth,parentHeight,gameOver));
+                bombs.push(new Bomb(p5,size,parentWidth,parentHeight,gameOver,bombImg));
               }
             return bombs            
         }

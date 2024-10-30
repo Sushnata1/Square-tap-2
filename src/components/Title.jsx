@@ -2,13 +2,13 @@ import * as React from "react";
 import { useState, Suspense, lazy } from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
-import PlaceholderImage from "../assets/placeholder.svg";
+import PlaceholderImage from "/placeholder.svg";
 
 export default () => {
 
-    const [name, setName] = useState(localStorage.getItem("name") ?? "Your Name Here");
+    const [name, setName] = useState(localStorage.getItem("name") ?? "");
 
-    const imgSrc = "../assets/kali.jpg";
+    const imgSrc = "./kali.jpeg";
 
     const saveName = (event) => { 
         setName(event.target.value)

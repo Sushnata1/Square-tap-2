@@ -1,5 +1,5 @@
 class Bot {
-    constructor(p5, size, w, h,increment) {
+    constructor(p5, size, w, h,increment,image) {
         this.w = w
         this.h = h
         this.p5 = p5;
@@ -10,7 +10,7 @@ class Bot {
         this.g = p5.random(0, 255);
         this.b = p5.random(0, 255);
         this.increment = increment
-        //this.img = img;//image
+        this.img = image
         //this.scontext = _sc;
     }
 
@@ -25,13 +25,10 @@ class Bot {
 
     show = () => {
         this.p5.push();
-        //tint(this.r, this.g, this.b);//fill(this.r,this.b,this.g);
-        //image(this.img,this.x, this.y, this.size, this.size);// 
-        //stroke(255);
-        //strokeWeight(4);
-        //stroke(this.r,this.g,this.b);
-        this.p5.fill(this.r, this.g, this.b);
-        this.p5.rect(this.x, this.y, this.size, this.size);
+        this.p5.tint(this.r, this.g, this.b);//fill(this.r,this.b,this.g);
+        this.p5.image(this.img,this.x, this.y, this.size, this.size);// 
+        // this.p5.fill(this.r, this.g, this.b);
+        // this.p5.rect(this.x, this.y, this.size, this.size);
         this.p5.pop();
     }
 
