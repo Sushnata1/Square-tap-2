@@ -18,12 +18,15 @@ export default ({increment,gameOver}) => {
 
     var pointerImg, botImg, bombImg;
 
+    var botSound,bombSound;
+
     function sketch(p5) {
 
         p5.preload = () => {
             pointerImg = p5.loadImage('./pointer.svg');
             botImg = p5.loadImage(`./kali.jpeg`);
             bombImg = p5.loadImage(`./bomb.jpg`);
+            //botSound = new p5.Oscillator(440,"square");
         }
 
         p5.setup = () => {
