@@ -26,7 +26,6 @@ export default ({increment,gameOver}) => {
             pointerImg = p5.loadImage('./pointer.svg');
             botImg = p5.loadImage(`./kali.jpeg`);
             bombImg = p5.loadImage(`./bomb.jpg`);
-            //botSound = new p5.Oscillator(440,"square");
         }
 
         p5.setup = () => {
