@@ -1,6 +1,6 @@
 import * as React from "react";
 
-import '../index.css'
+import '../index.scss'
 
 export default (err) => {
     const sadFace = "🥺"

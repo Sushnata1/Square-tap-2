@@ -8,7 +8,7 @@ export default () => {
 
     const [name, setName] = useState(localStorage.getItem("name") ?? "");
 
-    const imgSrc = "./kali.jpeg";
+    const imgSrc = "./santa.jpeg";
 
     const saveName = (event) => { 
         setName(event.target.value)
@@ -32,7 +32,7 @@ export default () => {
                 />
             </center>
             <h1>Square Tap 2</h1>
-            <h2>Welcome to Deepawali 2024 update</h2>
+            <h2>Welcome to Christmas 2024 update</h2>
             <input type="text" name="name" className="name namebox"
                 value={name} onChange={saveName}/>
         </>

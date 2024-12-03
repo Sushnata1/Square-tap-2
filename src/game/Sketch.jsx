@@ -24,7 +24,7 @@ export default ({increment,gameOver}) => {
 
         p5.preload = () => {
             pointerImg = p5.loadImage('./pointer.svg');
-            botImg = p5.loadImage(`./kali.jpeg`);
+            botImg = p5.loadImage(`./santa.jpg`);
             bombImg = p5.loadImage(`./bomb.jpg`);
         }
 
