@@ -8,7 +8,7 @@ export default () => {
 
     const [name, setName] = useState(localStorage.getItem("name") ?? "");
 
-    const imgSrc = "./santa.jpeg";
+    const imgSrc = "./gift.svg";
 
     const saveName = (event) => { 
         setName(event.target.value)

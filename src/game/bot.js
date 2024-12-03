@@ -18,8 +18,8 @@ class Bot {
         this.x = this.p5.random(this.size, this.w - this.size);
         this.y = this.p5.random(this.size, this.h - this.size);
         this.r = this.p5.random(20, 255);
-        this.g = this.p5.random(20, 255);
-        this.b = this.p5.random(20, 255);
+        this.g = 100;
+        this.b = 100;
         this.increment()
     }
 

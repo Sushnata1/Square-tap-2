@@ -24,8 +24,8 @@ export default ({increment,gameOver}) => {
 
         p5.preload = () => {
             pointerImg = p5.loadImage('./pointer.svg');
-            botImg = p5.loadImage(`./santa.jpg`);
-            bombImg = p5.loadImage(`./bomb.jpg`);
+            botImg = p5.loadImage(`./gift.svg`);
+            bombImg = p5.loadImage(`./badgift.svg`);
         }
 
         p5.setup = () => {
@@ -45,6 +45,7 @@ export default ({increment,gameOver}) => {
             p5.background(0);
             p5.push();
             p5.rectMode(p5.CENTER);
+            p5.colorMode(p5.HSL);
             p5.pop();
             for (let b of bots) {
                 b.collide();
