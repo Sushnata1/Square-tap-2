@@ -17,9 +17,9 @@ class Bot {
     change = () => {
         this.x = this.p5.random(this.size, this.w - this.size);
         this.y = this.p5.random(this.size, this.h - this.size);
-        this.r = this.p5.random(20, 255);
+        this.r = this.p5.random(5, 250);
         this.g = 100;
-        this.b = 100;
+        this.b = 50;
         this.increment()
     }
 

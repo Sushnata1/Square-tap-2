@@ -1,14 +1,13 @@
 import * as React from "react";
 import { useState, Suspense, lazy } from "react";
-import { LazyLoadImage } from "react-lazy-load-image-component";
 
-import PlaceholderImage from "/placeholder.svg";
+import images from "../imageurls.js";
+import './imageovrlay.scss'
 
 export default () => {
 
     const [name, setName] = useState(localStorage.getItem("name") ?? "");
 
-    const imgSrc = "./gift.svg";
 
     const saveName = (event) => { 
         setName(event.target.value)
@@ -20,15 +19,11 @@ export default () => {
     return (
         <>
             <center>
-                <LazyLoadImage
-                    src={imgSrc}
-                    onError={(e) => {
-                        e.target.onerror = null; // prevents looping
-                        e.target.src = PlaceholderImage; // set fallback image
-                    }}
+                <img
+                    src={images.good}
                     width="250px"
                     height="250px"
-                    style={{ margin: "50px" }}
+                    className="goodsquare"
                 />
             </center>
             <h1>Square Tap 2</h1>

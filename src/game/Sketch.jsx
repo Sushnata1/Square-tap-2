@@ -5,6 +5,8 @@ import { ReactP5Wrapper } from '@p5-wrapper/react';
 import Bot from './bot';
 import Bomb from './bomb';
 
+import images from "../imageurls.js";
+
 
 export default ({increment,gameOver}) => {
 
@@ -24,8 +26,8 @@ export default ({increment,gameOver}) => {
 
         p5.preload = () => {
             pointerImg = p5.loadImage('./pointer.svg');
-            botImg = p5.loadImage(`./gift.svg`);
-            bombImg = p5.loadImage(`./badgift.svg`);
+            botImg = p5.loadImage(images.good);
+            bombImg = p5.loadImage(images.bad);
         }
 
         p5.setup = () => {
