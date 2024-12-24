@@ -141,7 +141,9 @@ table {
   width: 100%;
   border-collapse: collapse;
   background-color: aquamarine;
+  overflow: scroll;
 }
+
 
 th,td {
   border: 2px solid slateblue;
@@ -159,6 +161,7 @@ tr:hover {
 }
 
 th{
+  position: sticky;
   background-color: darkblue;
   color : white;
   font-size: 20px;
