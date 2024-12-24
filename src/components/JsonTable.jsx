@@ -14,10 +14,10 @@ export default ({ objarr }) => {
             <tbody>
                 {objarr.map((item, index) => (
                     <tr key={index}>
-                        <td>{item.score}</td>
-                        <td>{item.level}</td>
-                        <td>{item.time_taken}</td>
-                        <td>{item.recorded_at}</td>
+                        <td>{item[objkeys[0]]}</td>
+                        <td>{item[objkeys[1]]}</td>
+                        <td>{item[objkeys[2]]}</td>
+                        <td>{item[objkeys[3]]}</td>
                     </tr>
                 ))}
             </tbody>

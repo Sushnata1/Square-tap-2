@@ -10,6 +10,11 @@ export default () => {
 
     return (
         <>
+            <div className='snowfall'>
+                {Array.from({ length: 28 }, (_, index) => (
+                    <span key={index}></span>
+                ))}
+            </div>
             <div className="pad">
                 <h1>Game Over</h1>
                 <p className="name namebox">{name}</p>
