@@ -109,7 +109,7 @@ p {
   background-color: aqua;
   margin: 0;
   padding: 10;
-  overflow: scroll;
+  overflow:scroll;
   opacity: 0.9;
 }
 
@@ -119,8 +119,9 @@ p:hover {
 
 button {
   background-color: lawngreen;
-  border: 0;
-  font-size: 28px
+  border: 20;
+  border-color: darkgreen;
+  font-size: 28px;
 }
 
 .button {

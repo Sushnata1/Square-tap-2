@@ -13,7 +13,7 @@ export default () => {
             <h2>Credits</h2>
             <ul>
                 <li>
-                    <b>Development & Graphics : </b> Sushnata Sarkar
+                    Sushnata Sarkar
                     <a href="https://github.com/Sushnata1" target="_blank" rel="noreferrer"> +
                         <FontAwesomeIcon icon={faGithub}
                             style={{ padding: '0px 5px' }}

@@ -25,6 +25,7 @@ export default () => {
         };
         gameHistory.push(s);
         gameHistory = Array.from(new Set(gameHistory));//remove duplicates
+        gameHistory.reverse();
         localStorage.setItem("gameHistory",JSON.stringify(gameHistory));
         localStorage.setItem("score",count)
         navigate("/game-over")

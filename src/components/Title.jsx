@@ -27,7 +27,7 @@ export default () => {
                 />
             </center>
             <h1>Square Tap 2</h1>
-            <h2>Welcome to Christmas 2024 update</h2>
+            <h2>Welcome to Pongal 2024 update</h2>
             <input type="text" name="name" className="name namebox"
                 value={name} onChange={saveName}/>
         </>

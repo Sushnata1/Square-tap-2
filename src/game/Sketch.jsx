@@ -49,11 +49,11 @@ export default ({increment,gameOver}) => {
             p5.rectMode(p5.CENTER);
             p5.colorMode(p5.HSL);
             p5.pop();
-            for (let b of bots) {
+            for (let b of bombs) {
                 b.collide();
                 b.show();
             }
-            for (let b of bombs) {
+            for (let b of bots) {
                 b.collide();
                 b.show();
             }

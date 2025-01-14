@@ -1,4 +1,4 @@
 export default {
-    "bad":"./badgift.png",
-    "good":"./gift.png"
+    "bad":"./badpot.png",
+    "good":"./goodpot.png"
 }
