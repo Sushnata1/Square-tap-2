@@ -118,14 +118,13 @@ p:hover {
 }
 
 button {
-  background-color: lawngreen;
-  border: 20;
-  border-color: darkgreen;
   font-size: 28px;
 }
 
 .button {
   background-color: lawngreen;
+  border: 20px;
+  border-color: darkgreen;
 }
 
 .button:hover{
@@ -133,10 +132,6 @@ button {
   background-color: green;
 }
 
-button:hover {
-  color: white;
-  background-color: green;
-}
 
 table {
   width: 100%;

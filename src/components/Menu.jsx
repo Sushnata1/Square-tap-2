@@ -47,9 +47,9 @@ export default () => {
     <ul>
       <li>Let's Play<br/></li>
       <li>
-        <button onClick={()=>setLevel("EASY")}>EASY</button>
-        <button onClick={()=>setLevel("MEDIUM")}>MEDIUM</button>
-        <button onClick={()=>setLevel("HARD")}>HARD</button>
+        <button className="button" onClick={()=>setLevel("EASY")}>EASY</button>
+        <button className="button" onClick={()=>setLevel("MEDIUM")}>MEDIUM</button>
+        <button className="button" onClick={()=>setLevel("HARD")}>HARD</button>
       </li>
     </ul>
     </>

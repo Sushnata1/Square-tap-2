@@ -18,7 +18,7 @@ export default () => {
 
     return (
         <div className="pad">
-            <h2>History <button onClick={clearHistory}>Clear</button></h2>
+            <h2>History <button className="button" onClick={clearHistory}>Clear</button></h2>
             <JsonTable objarr={gameHistory} />
         </div>
     )
