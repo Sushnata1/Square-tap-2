@@ -2,7 +2,7 @@ import { HashRouter, Routes, Route, Link } from 'react-router-dom';
 
 import Game from './Game.jsx';
 import Home from './Home.jsx'
-import GameOver from './components/GameOver.jsx';
+import GameOver from './GameOver.jsx';
 
 function App() {
   return (

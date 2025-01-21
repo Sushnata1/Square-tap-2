@@ -1,10 +1,7 @@
 import * as React from "react";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub } from '@fortawesome/free-brands-svg-icons';
-import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
-
-import './imageovrlay.scss'
+import { faGithub, faLinkedin} from '@fortawesome/free-brands-svg-icons';
 
 export default () => {
 
@@ -17,7 +14,7 @@ export default () => {
                     <a href="https://github.com/Sushnata1" target="_blank" rel="noreferrer"> +
                         <FontAwesomeIcon icon={faGithub}
                             style={{ padding: '0px 5px' }}
-                             />
+                        />
                     </a>
                     <a href="https://www.linkedin.com/in/sushnata-sarkar-5a9752170/" target="_blank" rel="noreferrer"> +
                         <FontAwesomeIcon icon={faLinkedin}

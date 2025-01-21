@@ -2,10 +2,10 @@ import React from 'react';
 import { useRef } from 'react';
 import { ReactP5Wrapper } from '@p5-wrapper/react';
 
-import Bot from './bot';
-import Bomb from './bomb';
+import Bot from './bot.js';
+import Bomb from './bomb.js';
 
-import images from "../imageurls.js";
+import {images} from "../constants.js";
 
 
 export default ({increment,gameOver}) => {

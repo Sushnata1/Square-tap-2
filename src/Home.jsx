@@ -10,15 +10,9 @@ import Credits from "./components/Credits";
 export default () => {
     return (
         <>
-            <div className='snowfall'>
-                {Array.from({ length: 28 }, (_, index) => (
-                    <span key={index}></span>
-                ))}
-            </div>
             <div className="pad">
                 <Title />
                 <Menu />
-                <p style={{overflow: "hidden", textAlign: "center"}}> 😊 Dedicated to all my friends from South India 😊 </p>
             </div>
             <Help />
             <Credits />
