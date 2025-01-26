@@ -21,4 +21,17 @@ export const levels = {
     },
 }
 
-export const credits = {}
+export const credits = {
+    "Development": {
+        "Sushnata Sarkar": {
+            "Github": "https://github.com/Sushnata1",
+            "LinkedIn": "https://www.linkedin.com/in/sushnata-sarkar-5a9752170/"
+        },
+    },
+    "Graphics": {
+        "Sayantanee Sarkar": {
+            "Github": "https://github.com/sayariya",
+            "LinkedIn": "https://www.linkedin.com/in/sayantanee-sarkar-474766227/"
+        },
+    }
+}
