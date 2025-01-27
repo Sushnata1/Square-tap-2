@@ -17,10 +17,7 @@ export default ({ objarr }) => {
                 <tbody>
                     {objarr.map((item, index) => (
                         <tr key={index}>
-                            <td>{item[objkeys[0]]}</td>
-                            <td>{item[objkeys[1]]}</td>
-                            <td>{item[objkeys[2]]}</td>
-                            <td>{item[objkeys[3]]}</td>
+                            {objkeys.map((_,i)=><td>{item[objkeys[i]]}</td>)}
                         </tr>
                     ))}
                 </tbody>
