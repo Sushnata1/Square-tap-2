@@ -74,17 +74,12 @@ h2:hover {
 ul {
   text-align: center;
   list-style-type: none;
-  font-size: 40px;
+  padding-left: 4vw;
+  font-size: 8vw;
   margin: 0;
   display: block;
   overflow: auto;
   background-color: green;
-}
-
-@media (max-width:480px) {
-  ul {
-    font-size: 28px;
-  }
 }
 
 li {
