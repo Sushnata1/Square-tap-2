@@ -81,6 +81,12 @@ ul {
   background-color: green;
 }
 
+@media (max-width:480px) {
+  ul {
+    font-size: 28px;
+  }
+}
+
 li {
   color: #fff;
 }
