@@ -45,6 +45,21 @@ h2 {
   background-color: var(--h2color);
 }
 
+h3 {
+  text-align: center;
+  font-size: 40px;
+  margin: 0;
+  display: block;
+  color: white;
+  overflow: auto;
+  background-color: var(--h3color);
+  opacity: 0.9;
+}
+
+h3:hover {
+  opacity: 1;
+}
+
 .namebox {
   display: block;
   width: 98.8%;
@@ -75,11 +90,17 @@ ul {
   text-align: center;
   list-style-type: none;
   padding-left: 4vw;
-  font-size: 8vw;
+  font-size: 40px;
   margin: 0;
   display: block;
   overflow: auto;
   background-color: green;
+}
+
+@media (max-width:480px) {
+  ul {
+    font-size: 7vw;
+  }
 }
 
 li {

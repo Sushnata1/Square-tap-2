@@ -20,12 +20,9 @@ export default () => {
   const levelNames = Object.keys(levels);
 
     return (
-    <>
-    <ul>
-      <li>Let's Play<br/></li>
-      <li>{levelNames.map((name,index)=><button key={index} className="button" onClick={()=>setLevel(name)}>{name}</button>)}
-      </li>
-    </ul>
-    </>
+    <h3>
+      Let's Play <br/>
+      {levelNames.map((name,index)=><button key={index} className="button" onClick={()=>setLevel(name)}>{name}</button>)}
+    </h3>
     )
 }
