@@ -5,14 +5,22 @@
   --liacolor: yellowgreen;
 }
 
+@font-face {
+  font-family: "Pixel";
+  src: local("AdvancedPixel7-2L9W"),
+    url("./AdvancedPixel7-2L9W.ttf") format("truetype");
+  font-weight: normal;
+}
+
 body {
   background-color: black;
+  font-family:'Times New Roman', Times, serif;
 }
 
 div.pad {
   margin-left: auto;
   margin-right: auto;
-  width: 70%;
+  width: 75%;
   align-self: center;
   padding: 5% 0 0;
   display: block;
@@ -61,6 +69,7 @@ h3:hover {
 }
 
 .namebox {
+  font-family:'Times New Roman', Times, serif;
   display: block;
   width: 98.8%;
   font-size: 45px;
@@ -130,8 +139,8 @@ p {
   font-size: 28px;
   background-color: aqua;
   margin: 0;
-  padding: 10;
   opacity: 0.9;
+  padding: 10px;
 }
 
 p:hover {
@@ -140,9 +149,12 @@ p:hover {
 
 button {
   font-size: 28px;
+  margin-right: 5px;
+  margin-bottom: 5px;
 }
 
 .button {
+  font-family:'Times New Roman', Times, serif;
   background-color: lawngreen;
   border: 20px;
   border-color: darkgreen;

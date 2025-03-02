@@ -2,6 +2,7 @@ import * as React from "react";
 import { Link } from "react-router-dom";
 
 import History from "./components/History";
+import Decoration from "./components/Decoration";
 
 export default () => {
 
@@ -10,6 +11,7 @@ export default () => {
 
     return (
         <>
+            <Decoration />
             <div className="pad">
                 <h1>Game Over</h1>
                 <p className="name namebox">{name}</p>

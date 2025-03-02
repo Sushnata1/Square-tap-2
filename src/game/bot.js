@@ -1,3 +1,4 @@
+import { sounds } from "../constants";
 class Bot {
     constructor(p5, size, w, h,increment,image) {
         this.w = w
@@ -11,7 +12,6 @@ class Bot {
         this.b = p5.random(0, 255);
         this.increment = increment
         this.img = image
-        //this.scontext = _sc;
     }
 
     change = () => {
@@ -38,23 +38,9 @@ class Bot {
             &&
             (this.p5.mouseY >= this.y && this.p5.mouseY <= this.y + this.size)
         ) {
-            // var p = document.getElementById("points");
-            // po++;
-            // p.innerHTML = "Score : " + po;
             console.log("Bot hovered");
-
+            sounds.good.play();
             this.change();
-            // var soscillator;
-            // soscillator = this.scontext.createOscillator();
-            // console.log("oscillator");
-            // //console.log(soscillator);
-            // soscillator.type = 'sine';
-            // soscillator.frequency.value = 523;
-            // soscillator.connect(this.scontext.destination);
-            // var now = this.scontext.currentTime;
-            // soscillator.start(0);
-            // //console.log("sound");--
-            // soscillator.stop(now + 0.5);
         }
     }
 }

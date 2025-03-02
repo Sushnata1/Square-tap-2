@@ -1,6 +1,11 @@
 export const images = {
-    "bad": "./badbook.png",
-    "good": "./goodbook.png"
+    "bad": "./badblob.png",
+    "good": "./goodblob.png"
+}
+
+export const sounds = {
+    "good": new Audio("./good_sound.wav"),
+    "bad": new Audio("./bad_sound.wav")
 }
 
 export const levels = {

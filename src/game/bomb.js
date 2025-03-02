@@ -1,3 +1,4 @@
+import { sounds } from "../constants";
 class Bomb {
     constructor(p5,size,w,h,gameOver,image) {
         this.p5 = p5
@@ -21,6 +22,7 @@ class Bomb {
             (this.p5.mouseX >= this.x && this.p5.mouseX <= this.x + this.n)
             &&
             (this.p5.mouseY >= this.y && this.p5.mouseY <= this.y + this.n)) {
+            sounds.bad.play();
             this.p5.noLoop();
             this.gameOver();
         }
