@@ -1,8 +1,6 @@
-# React + Vite
+# Square-Tap-2
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+The aim of this game is to hover (for PCs) on the coloured squares  Or tap (for mobile devices) on them to get 1 point.If a white square  is tapped or hovered, the game is over.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Play at : https://sushnata1.github.io/Square-tap-2/
+![qr code](qrcode_sushnata1.github.io.png)
