@@ -1,6 +1,5 @@
-import { sounds } from "../constants";
 class Bot {
-    constructor(p5, size, w, h,increment,image) {
+    constructor(p5, size, w, h,increment,image,sound) {
         this.w = w
         this.h = h
         this.p5 = p5;
@@ -10,8 +9,9 @@ class Bot {
         this.r = p5.random(20, 255);
         this.g = p5.random(0, 255);
         this.b = p5.random(0, 255);
-        this.increment = increment
-        this.img = image
+        this.increment = increment;
+        this.img = image;
+        this.sound = sound;
     }
 
     change = () => {
@@ -39,7 +39,7 @@ class Bot {
             (this.p5.mouseY >= this.y && this.p5.mouseY <= this.y + this.size)
         ) {
             console.log("Bot hovered");
-            sounds.good.play();
+            this.sound.play(1);
             this.change();
         }
     }

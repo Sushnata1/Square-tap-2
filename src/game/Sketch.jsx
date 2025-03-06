@@ -6,6 +6,7 @@ import Bot from './bot.js';
 import Bomb from './bomb.js';
 
 import {images} from "../constants.js";
+import OscillatorWrapper from '../components/OscillatorWrapper.js';
 
 
 export default ({increment,gameOver}) => {
@@ -20,14 +21,14 @@ export default ({increment,gameOver}) => {
 
     var pointerImg, botImg, bombImg;
 
-    var botSound,bombSound;
-
     function sketch(p5) {
 
         p5.preload = () => {
             pointerImg = p5.loadImage('./pointer.svg');
             botImg = p5.loadImage(images.good);
             bombImg = p5.loadImage(images.bad);
+            const c = new window.AudioContext();
+            console.log({"Audio" : c});
         }
 
         p5.setup = () => {
@@ -39,7 +40,7 @@ export default ({increment,gameOver}) => {
             console.log({bots});
             bombs = createBombs(p5,count);
             console.log({bombs});
-            p5.frameRate(10)
+            p5.frameRate(10);
         }
 
         p5.draw = () => {
@@ -67,9 +68,10 @@ export default ({increment,gameOver}) => {
         }
 
         const createBots = (p5,count) => {
+            var collectSound = new OscillatorWrapper(new window.AudioContext(),"sine",573);
             var bots = [];
             for (let i = 0; i < count; i++) {
-                bots.push(new Bot(p5,size,parentWidth,parentHeight,increment,botImg));
+                bots.push(new Bot(p5,size,parentWidth,parentHeight,increment,botImg,collectSound));
               }
             return bots            
         }

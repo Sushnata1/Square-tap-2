@@ -33,10 +33,6 @@ export default () => {
         console.log(localStorage);
     }
 
-    useEffect(() => {
-        sounds.good.play();
-    })
-
     return (
         <div className="full-screen">
             <h1>Game</h1>
