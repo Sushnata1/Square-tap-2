@@ -4,3 +4,6 @@ The aim of this game is to hover (for PCs) on the coloured squares  Or tap (for 
 
 Play at : https://sushnata1.github.io/Square-tap-2/
 ![qr code](qrcode_sushnata1.github.io.png)
+
+## Known bugs
+- [ ] Probem with sfx

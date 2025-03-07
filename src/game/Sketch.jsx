@@ -68,9 +68,10 @@ export default ({increment,gameOver}) => {
         }
 
         const createBots = (p5,count) => {
-            var collectSound = new OscillatorWrapper(new window.AudioContext(),"sine",573);
+            var majorScale = [256.87,288.33,323.63,342.88,384.87,432.0,484.9];
             var bots = [];
             for (let i = 0; i < count; i++) {
+                var collectSound = new OscillatorWrapper(new window.AudioContext(),"sine",majorScale[i%7]);
                 bots.push(new Bot(p5,size,parentWidth,parentHeight,increment,botImg,collectSound));
               }
             return bots            

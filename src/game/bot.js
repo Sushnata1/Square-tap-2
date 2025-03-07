@@ -39,6 +39,7 @@ class Bot {
             (this.p5.mouseY >= this.y && this.p5.mouseY <= this.y + this.size)
         ) {
             console.log("Bot hovered");
+            console.log(this.sound);
             this.sound.play(1);
             this.change();
         }
