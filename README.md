@@ -7,3 +7,4 @@ Play at : https://sushnata1.github.io/Square-tap-2/
 
 ## Known bugs
 - [ ] Probem with sfx
+- [ ] Trying to cherry-pick
