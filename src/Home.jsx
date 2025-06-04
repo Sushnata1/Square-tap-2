@@ -12,17 +12,18 @@ import './holi.scss'
 
 export default () => {
 
-    useEffect(()=>{
-        sounds.good.play();
-    })
+    // useEffect(()=>{
+    //     sounds.good.play();
+    // })
     
     return (
         <>
             <div className="pad">
                 <Title />
                 <Menu />
+                <h2><a href={"https://youtu.be/yzh8zmVv6UI?si=DfN6V7LRNqjJvz0-"} target="_blank" rel="noreferrer"> Help </a></h2>
             </div>
-            <Help />
+            {/* <Help /> */}
             <Credits />
             <Decoration />
         </>

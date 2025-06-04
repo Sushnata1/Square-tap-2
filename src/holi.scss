@@ -1,17 +1,17 @@
 @use 'sass:math';
 
-$d: 40;
-$count: 6;
+$farthest_distance: 40;
+$count_of_blobs: 6;
 $tau: 2*math.$pi;
 
 .snowfall {
     display: flex;
-    //overflow: hidden;
+    overflow: visible;
     justify-content: center;
     align-items: center;
 
     position: absolute;
-    bottom: 0;
+    bottom: 50%;
     left: 50%;
     transform: translateX(-50%);
     //flex-flow: wrap;
@@ -27,7 +27,7 @@ $tau: 2*math.$pi;
         width: 80px;
         border-radius: 50%; //56% 44% 73% 27% /  45% 68% 32% 55%;//50%;
 
-        @for $a from 1 through $count {
+        @for $a from 1 through $count_of_blobs {
             &:nth-child(n + #{$a}) {
                 background: hsl(math.random(255), 100%, 50%);
                 animation: snowy-#{$a} 5s infinite linear;
@@ -37,7 +37,7 @@ $tau: 2*math.$pi;
 
 }
 
-@for $a from 1 through $count {
+@for $a from 1 through $count_of_blobs {
 
     @keyframes snowy-#{$a} {
         0% {
@@ -48,10 +48,10 @@ $tau: 2*math.$pi;
         }
 
         100% {
-            opacity: 0.8;
+            opacity: 1;
             border-radius: 56% 44% 73% 27% / 45% 68% 32% 55%;
-            $tx: #{$d*math.cos(calc($tau*$a / $count))}vh;
-            $ty: #{$d*math.sin(calc($tau*$a / $count))}vw;
+            $tx: #{$farthest_distance*math.cos(calc($tau*$a / $count_of_blobs))}vh;
+            $ty: #{$farthest_distance*math.sin(calc($tau*$a / $count_of_blobs))}vw;
             transform: translate($tx, $ty) rotate(360deg) scale(2);
         }
     }

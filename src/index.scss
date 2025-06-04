@@ -24,8 +24,13 @@ div.pad {
   align-self: center;
   padding: 5% 0 0;
   display: block;
-  background-color: rbga(255, 0, 0, 100);
-  z-index: 3;
+  z-index: 1;
+  scrollbar-width: none;
+}
+
+a {
+  text-decoration: none;
+  color:aquamarine;
 }
 
 h1 {
@@ -166,7 +171,7 @@ button {
 }
 
 .goodsquare{
-  animation: changecolor 10s infinite steps(1);
+  //animation: changecolor 10s infinite steps(1);
   $kft:10;
   @keyframes changecolor {
     @for $i from 1 through $kft{
