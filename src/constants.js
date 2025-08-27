@@ -1,6 +1,6 @@
 export const images = {
-    "bad": "./badblob.png",
-    "good": "./goodblob.png"
+    "bad": "./bad_kite.png",
+    "good": "./good_kite.png"
 }
 
 export const sounds = {
