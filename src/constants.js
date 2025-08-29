@@ -1,5 +1,7 @@
+export const theme = "biswakarma_puja"
+
 export const images = {
-    "bad": "./bad_kite.png",
+    "bad": `./bad_kite.png`,
     "good": "./good_kite.png"
 }
 

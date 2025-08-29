@@ -1,9 +1,6 @@
 import * as React from "react";
 import { useState } from "react";
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faWikipediaW } from '@fortawesome/free-brands-svg-icons';
-
 import { images } from "../constants.js";
 import Image from "../components/Image.jsx"
 
@@ -29,7 +26,7 @@ export default () => {
                 />
             </center>
             <h1>Square Tap 2</h1>
-            <h2>Welcome to Holi 2025 update</h2>
+            <h2>Welcome to Bishwakarma Puja 2025 update</h2>
             <input type="text" name="name" className="name namebox"
                 value={name} onChange={saveName} />
         </>
