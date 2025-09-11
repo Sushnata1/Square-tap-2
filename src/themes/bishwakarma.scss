@@ -1,0 +1,59 @@
+@use 'sass:math';
+
+$farthest_distance: 40;
+$count_of_blobs: 6;
+$tau: 2*math.$pi;
+
+.snowfall {
+    display: flex;
+    overflow: visible;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    //flex-flow: wrap;
+
+    span {
+        pointer-events: none;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        display: inline-block;
+        //visibility: hidden;
+        height: 80px;
+        width: 80px;
+        //border-radius: 50%; //56% 44% 73% 27% /  45% 68% 32% 55%;//50%;
+
+        @for $a from 1 through $count_of_blobs {
+            &:nth-child(n + #{$a}) {
+                background-image: url("good_kite.png");
+                background-size: cover;
+                animation: snowy-#{$a} 5s infinite linear;
+            }
+        }
+    }
+
+}
+
+@for $a from 1 through $count_of_blobs {
+
+    @keyframes snowy-#{$a} {
+        0% {
+            opacity: 0.2;
+            visibility: visible;
+            border-radius: 50%;
+            transform: translate(0, 0) rotate(0deg) scale(1);
+        }
+
+        100% {
+            opacity: 1;
+            //border-radius: 56% 44% 73% 27% / 45% 68% 32% 55%;
+            $tx: #{$farthest_distance*math.cos(calc($tau*$a / $count_of_blobs))}vh;
+            $ty: #{$farthest_distance*math.sin(calc($tau*$a / $count_of_blobs))}vw;
+            transform: translate($tx, $ty) rotate(360deg);
+        }
+    }
+}

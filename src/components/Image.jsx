@@ -1,5 +1,7 @@
 import * as React from "react";
 
+import './image.scss'
+
 export default ({src,size, typ}) => {
     return (
         <>

@@ -8,7 +8,7 @@ import Credits from "./components/Credits";
 import Decoration from "./components/Decoration";
 import { sounds } from "./constants";
 
-import './themes/holi.scss'
+import './themes/bishwakarma.scss'
 
 export default () => {
 
@@ -23,7 +23,7 @@ export default () => {
                 <Menu />
             </div>
             <Help />
-            <Credits />
+            <Credits/>
             <Decoration />
         </>
     )

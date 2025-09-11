@@ -19,10 +19,10 @@ export default () => {
             <h2>Credits</h2>
             <ul style={{ textAlign: "left" }}>
                 {units.map((unit, i1) => <li key={i1}>
-                    <b>{unit} : </b>
+                    <b>{unit} {unit && ":"}</b>
                     <ul style={{ textAlign: "left" }}>
                         {Object.keys(credits[unit]).map((name, i2) => <li key={i2}>
-                            {name}
+                            {name}<br/>
                             {Object.keys(credits[unit][name]).map((network, i3) => <a href={credits[unit][name][network]} target="_blank" rel="noreferrer"> +<FontAwesomeIcon key={i3} icon={icons[network]} /></a>)}
                         </li>)}
                     </ul>
