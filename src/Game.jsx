@@ -40,8 +40,8 @@ export default () => {
     return (
         <div className="full-screen">
             <h1>Game</h1>
-            <Sketch increment={() => setCount(count + 1)} gameOver={navigateToGameOver} />
             <h2>{count}</h2>
+            <Sketch increment={() => setCount(count + 1)} gameOver={navigateToGameOver} />
         </div>
     )
 }
