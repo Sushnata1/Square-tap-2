@@ -1,8 +1,8 @@
 export const theme = "biswakarma_puja";
 
 export const images = {
-    "bad": `./bomb.png`,
-    "good": `./box.jpg`
+    "bad": `./asur.jpeg`,
+    "good": `./durga.jpeg`
 }
 
 export const sounds = {
