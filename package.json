@@ -10,7 +10,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
     "clean": "rm -rf dist",
-    "lint": "eslint .",
+    "lint": "eslint .--quiet",
     "preview": "vite preview"
   },
   "dependencies": {
